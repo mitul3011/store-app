@@ -26,4 +26,8 @@ router.get('/home', auth, (req, res) => {
     });
 });
 
+router.get('/deletedProfile', (req, res) => {
+    res.render('deleted');
+});
+
 module.exports = router;

@@ -164,8 +164,7 @@ deleteButton.addEventListener('click', () => {
         method: 'DELETE'
     }).then((response) => {
         if(response.status === 200)
-            // window.location = '/success?task=Deleted';
-            window.location = '/login';
+            window.location = '/deletedProfile';
         else{
             window.location.reload();
         }

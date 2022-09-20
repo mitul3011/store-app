@@ -27,6 +27,10 @@ app.use(webAppRouter);
 app.use('/api/user', userRouter);
 app.use('/api/product', productRouter);
 
+app.get('/*', (req, res) => {
+    res.render('404');
+});
+
 app.listen(port, () => {
     console.log('Server is up on port', port);
 });
